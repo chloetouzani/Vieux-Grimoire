@@ -9,9 +9,7 @@ router.post('/:id/rating', auth, libraryCtrl.rateBook);
 router.get('/', libraryCtrl.getAllBooks);
 router.get('/bestrating', libraryCtrl.getBestBooks);
 router.get('/:id', libraryCtrl.getOneBook);
-
 router.put('/:id', auth, multer, libraryCtrl.modifyBook);
 router.delete('/:id', auth, libraryCtrl.deleteBook);
-
 
 module.exports = router;

@@ -1,25 +1,23 @@
-const express = require('express');
-const cors = require('cors');
-const mongoose = require('mongoose');
-const path = require('path');
+'use strict';
 
-const libraryRoutes = require('./routes/library');
-const userRoutes = require('./routes/user');
+const express   = require('express');
+const cors      = require('cors');
+const mongoose  = require('mongoose');
+const path      = require('path');
+
+require('dotenv').config();
+
 const app = express();
+app.use(express.json()).use(cors());
 
-app.use(cors());
-app.use(express.json());
-
-mongoose.connect('',
-  { useNewUrlParser: true,
-    useUnifiedTopology: true })
+mongoose
+  .connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
-mongoose.createConnection('', { useNewUrlParser: true });
 
-
-app.use('/api/books', libraryRoutes);
-app.use('/api/auth', userRoutes);
-app.use('/images', express.static(path.join(__dirname, 'images')));
+app
+  .use('/api/books', require('./routes/library'))
+  .use('/api/auth', require('./routes/user'))
+  .use('/images', express.static(path.join(__dirname, 'images')));
 
 module.exports = app;
