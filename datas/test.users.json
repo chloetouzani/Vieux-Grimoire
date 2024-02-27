@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "65c0b906b4c9d1b5202e5896"
+  },
+  "email": "chloe.touzani11@gmail.com",
+  "password": "$2b$10$RPwBrZ3m9nI8i7Ds8JbANuBBeMPnRH7ixEc.1TKflZvajyi8yBPT.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c0bf204068602b55ba42f8"
+  },
+  "email": "chloe.test@test.fr",
+  "password": "$2b$10$.2qFfqiheW4tZI3vOS2tWOes/oYn3cuVBi/H95OjPCkLuEG7SfTsC",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ca56cfb13ae78f071266d4"
+  },
+  "email": "test.test@test.fr",
+  "password": "$2b$10$3Tn4.Qz2InjPVAeUmh1fp.lhB5xituvdtnXtTFwlQyaWgbPbVqF8S",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cd2f1f2fe91d934ea575c2"
+  },
+  "email": "test@test.fr",
+  "password": "$2b$10$qyzHnR8ozfzHZoXjQIpCW.11.5LtpfBq5rWwe/zc.t0XUWxQnyJ/i",
+  "__v": 0
+}]

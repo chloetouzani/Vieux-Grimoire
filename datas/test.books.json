@@ -1,0 +1,271 @@
+[{
+  "_id": {
+    "$oid": "65cd3ba18a3adfae9fa6772a"
+  },
+  "userId": "65c0b906b4c9d1b5202e5896",
+  "title": "Milwaukee Mission",
+  "author": "Elder Cooper",
+  "imageUrl": "http://localhost:4000/images/1709039431524.webp",
+  "year": 2022,
+  "genre": "Policier",
+  "ratings": [
+    {
+      "userId": "65c0b906b4c9d1b5202e5896",
+      "grade": 4,
+      "_id": {
+        "$oid": "65cd3ba18a3adfae9fa6772b"
+      }
+    }
+  ],
+  "averageRating": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65cf8b78e34389fdb07df21a"
+  },
+  "userId": "65c0b906b4c9d1b5202e5896",
+  "title": "Book for Esther",
+  "author": "Alabaster",
+  "imageUrl": "http://localhost:4000/images/1709039511172.webp",
+  "year": 2021,
+  "genre": "Paysage",
+  "ratings": [
+    {
+      "userId": "65c0b906b4c9d1b5202e5896",
+      "grade": 4,
+      "_id": {
+        "$oid": "65cf8b78e34389fdb07df21b"
+      }
+    }
+  ],
+  "averageRating": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d5ab31eae3acc56a0abf9c"
+  },
+  "userId": "65c0b906b4c9d1b5202e5896",
+  "title": "The Kinfolk Table",
+  "author": "Nathan Williams",
+  "imageUrl": "http://localhost:4000/images/1709039545403.webp",
+  "year": 2022,
+  "genre": "Cuisine",
+  "ratings": [
+    {
+      "userId": "65c0b906b4c9d1b5202e5896",
+      "grade": 3,
+      "_id": {
+        "$oid": "65d5ab31eae3acc56a0abf9d"
+      }
+    }
+  ],
+  "averageRating": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d5abb031a20b7706cd0c03"
+  },
+  "userId": "65c0b906b4c9d1b5202e5896",
+  "title": "Thinking fast & slow",
+  "author": "Daniel Kahneman",
+  "imageUrl": "http://localhost:4000/images/1709039559249.webp",
+  "year": 2022,
+  "genre": "Economie",
+  "ratings": [
+    {
+      "userId": "65c0b906b4c9d1b5202e5896",
+      "grade": 3,
+      "_id": {
+        "$oid": "65d5abb031a20b7706cd0c04"
+      }
+    }
+  ],
+  "averageRating": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d5ac887e088dd256805826"
+  },
+  "userId": "65c0b906b4c9d1b5202e5896",
+  "title": "Company of one",
+  "author": "Paul Jarvis",
+  "imageUrl": "http://localhost:4000/images/1709039347389.webp",
+  "year": 2022,
+  "genre": "Business",
+  "ratings": [
+    {
+      "userId": "65c0b906b4c9d1b5202e5896",
+      "grade": 4,
+      "_id": {
+        "$oid": "65d5ac887e088dd256805827"
+      }
+    }
+  ],
+  "averageRating": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d8bd7e2e749347420a845b"
+  },
+  "userId": "65c0b906b4c9d1b5202e5896",
+  "title": "Design Anthology",
+  "author": "James Doe",
+  "imageUrl": "http://localhost:4000/images/1709039360062.webp",
+  "year": 2022,
+  "genre": "Architecture",
+  "ratings": [
+    {
+      "userId": "65c0b906b4c9d1b5202e5896",
+      "grade": 4,
+      "_id": {
+        "$oid": "65d8bd7e2e749347420a845c"
+      }
+    },
+    {
+      "userId": "65ca56cfb13ae78f071266d4",
+      "grade": 5,
+      "_id": {
+        "$oid": "65dde23524d2ac869b097f0e"
+      }
+    }
+  ],
+  "averageRating": 4.5,
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "65ddddda30f977dc63a33902"
+  },
+  "userId": "65c0b906b4c9d1b5202e5896",
+  "title": "Book of Genesis",
+  "author": "Alabaster",
+  "imageUrl": "http://localhost:4000/images/1709039066245.webp",
+  "year": 2022,
+  "genre": "Jardinage",
+  "ratings": [
+    {
+      "userId": "65c0b906b4c9d1b5202e5896",
+      "grade": 3,
+      "_id": {
+        "$oid": "65ddddda30f977dc63a33903"
+      }
+    }
+  ],
+  "averageRating": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65dde13c24d2ac869b097e2c"
+  },
+  "userId": "65c0b906b4c9d1b5202e5896",
+  "title": "Psalms",
+  "author": "Alabaster",
+  "imageUrl": "http://localhost:4000/images/1709039932222.webp",
+  "year": 2022,
+  "genre": "Poésie",
+  "ratings": [
+    {
+      "userId": "65c0b906b4c9d1b5202e5896",
+      "grade": 4,
+      "_id": {
+        "$oid": "65dde13c24d2ac869b097e2d"
+      }
+    }
+  ],
+  "averageRating": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65dde17f24d2ac869b097e7d"
+  },
+  "userId": "65c0b906b4c9d1b5202e5896",
+  "title": "Milk & Honey",
+  "author": "Rupi Kaur",
+  "imageUrl": "http://localhost:4000/images/1709039999303.webp",
+  "year": 2022,
+  "genre": "Ecologie",
+  "ratings": [
+    {
+      "userId": "65c0b906b4c9d1b5202e5896",
+      "grade": 4,
+      "_id": {
+        "$oid": "65dde17f24d2ac869b097e7e"
+      }
+    }
+  ],
+  "averageRating": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65dde1b124d2ac869b097e94"
+  },
+  "userId": "65c0b906b4c9d1b5202e5896",
+  "title": "Supore e Tremori",
+  "author": "Amélie Nothomb",
+  "imageUrl": "http://localhost:4000/images/1709040049461.webp",
+  "year": 2018,
+  "genre": "Roman",
+  "ratings": [
+    {
+      "userId": "65c0b906b4c9d1b5202e5896",
+      "grade": 4,
+      "_id": {
+        "$oid": "65dde1b124d2ac869b097e95"
+      }
+    }
+  ],
+  "averageRating": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65dde1e424d2ac869b097ead"
+  },
+  "userId": "65c0b906b4c9d1b5202e5896",
+  "title": "Cereal",
+  "author": "Van Duysen",
+  "imageUrl": "http://localhost:4000/images/1709040100692.webp",
+  "year": 2022,
+  "genre": "Architecture",
+  "ratings": [
+    {
+      "userId": "65c0b906b4c9d1b5202e5896",
+      "grade": 4,
+      "_id": {
+        "$oid": "65dde1e424d2ac869b097eae"
+      }
+    }
+  ],
+  "averageRating": 4,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65dde20c24d2ac869b097ec8"
+  },
+  "userId": "65c0b906b4c9d1b5202e5896",
+  "title": "Zero to One",
+  "author": "Peter Thiel",
+  "imageUrl": "http://localhost:4000/images/1709040140393.webp",
+  "year": 2022,
+  "genre": "Business",
+  "ratings": [
+    {
+      "userId": "65c0b906b4c9d1b5202e5896",
+      "grade": 4,
+      "_id": {
+        "$oid": "65dde20c24d2ac869b097ec9"
+      }
+    }
+  ],
+  "averageRating": 4,
+  "__v": 0
+}]
