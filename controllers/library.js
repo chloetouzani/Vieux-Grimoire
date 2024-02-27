@@ -16,12 +16,19 @@ exports.createBook = async (req, res) => {
   await sharp(req.file.path)
     .resize(500)
     .webp({ quality: 80 })
-    .toFile(`images/${req.file.filename}.webp`)
+    .toFile(`images/${req.file.filename}.webp`);
 
-  book.save()
-  .then(res.status(201).json({ message: 'Objet enregisté !'}))
-  .catch(error => res.status(400).json({ error }))
-};
+    sharp.cache(false);
+
+    await book.save()
+    .then(() => {
+      fs.unlink(req.file.path, (error) => {
+        if (error) {console.log("erreur delete : ", error)};
+      });
+    })
+    .then(() => {res.status(201).json({ message: 'Objet enregistré !' });})
+    .catch(error => {res.status(400).json({ error });});
+  };
 
 exports.rateBook = (req, res) => {
   Book.findOne({ _id: req.params.id })
@@ -53,9 +60,27 @@ exports.rateBook = (req, res) => {
 exports.modifyBook = async (req, res) => {
   if (req.file) {
     await sharp(req.file.path)
-    .resize(200)
-    .webp({ quality: 50 })
+    .resize(500)
+    .webp({ quality: 80 })
     .toFile(`images/${req.file.filename}.webp`)
+
+    sharp.cache(false)
+
+    Book.findOne({_id: req.params.id})
+    .then((book) => {
+      const filename = book.imageUrl.split('/images/')[1];
+      fs.unlink(`images/${filename}`, (error) => {
+        if (error) {console.log("erreur delete : ", error)};
+      });
+    })
+    .then(() => {
+      fs.unlink(req.file.path, (error) => {
+        if (error) {console.log("erreur delete : ", error)};
+      })
+    })
+    .catch((error) => {
+      res.status(400).json({ error });
+    });
   }
 
   const bookObject = req.file ? {
@@ -65,18 +90,18 @@ exports.modifyBook = async (req, res) => {
 
   delete bookObject._userId;
     Book.findOne({_id: req.params.id})
-        .then((book) => {
-            if (book.userId != req.auth.userId) {
-                res.status(401).json({ message : 'Not authorized'});
-            } else {
-                Book.updateOne({ _id: req.params.id}, { ...bookObject, _id: req.params.id})
-                .then(() => res.status(200).json({message : 'Objet modifié!'}))
-                .catch(error => res.status(400).json({ error }));
-            }
-        })
-        .catch((error) => {
-            res.status(400).json({ error });
-        });
+      .then((book) => {
+        if (book.userId != req.auth.userId) {
+          res.status(401).json({ message : 'Not authorized'});
+        } else {
+          Book.updateOne({ _id: req.params.id}, { ...bookObject, _id: req.params.id})
+          .then(() => res.status(200).json({message : 'Objet modifié!'}))
+          .catch(error => res.status(400).json({ error }));
+        }
+      })
+      .catch((error) => {
+        res.status(400).json({ error });
+      });
 };
 
 exports.deleteBook = (req, res) => {
