@@ -9,3 +9,5 @@ Les datas ont été ajoutés sous forme de JSON dans le dossier datas.
 Pour tester avec votre compte MongoDB:
 Je recomande d'utiliser MOngoDBCompass et d'utiliser le bouton "ADD DATA" pour importer les fichiers JSON.
 Mais il est également possible d'utiliser `mongoimport`. La documentation à ce sujet est disponible ici : [mongoimport](https://www.mongodb.com/docs/atlas/import/mongoimport/).
+Il faut ensuite créer un fichier nommé ".env" et y noter :
+`DB = (votre lien de connection MongoDB)`
